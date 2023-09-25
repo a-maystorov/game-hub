@@ -10,7 +10,7 @@ interface Props {
   game: Game;
 }
 
-const GameCard = ({ game }: Props) => {
+export const GameCard = ({ game }: Props) => {
   return (
     <Card as={Link} to={"/games/" + game.slug}>
       <Image src={getCroppedImageUrl(game.background_image)} />
@@ -30,5 +30,3 @@ const GameCard = ({ game }: Props) => {
     </Card>
   );
 };
-
-export default GameCard;
