@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode | ReactNode[];
 }
 
-const DefinitionItem = ({ children, term }: Props) => {
+export const DefinitionItem = ({ children, term }: Props) => {
   return (
     <Box marginY={5}>
       <Heading as="dt" fontSize="md" color="gray.600">
@@ -16,5 +16,3 @@ const DefinitionItem = ({ children, term }: Props) => {
     </Box>
   );
 };
-
-export default DefinitionItem;
