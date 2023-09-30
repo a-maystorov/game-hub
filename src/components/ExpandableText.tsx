@@ -5,7 +5,7 @@ interface Props {
   children: string;
 }
 
-const ExpandableText = ({ children }: Props) => {
+export const ExpandableText = ({ children }: Props) => {
   const [expanded, setExpanded] = useState(false);
   const limit = 300;
   const summary = expanded ? children : children.substring(0, limit) + "...";
@@ -29,5 +29,3 @@ const ExpandableText = ({ children }: Props) => {
     </Text>
   );
 };
-
-export default ExpandableText;
