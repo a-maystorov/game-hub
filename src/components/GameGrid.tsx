@@ -6,7 +6,7 @@ import { GameCard } from "./GameCard";
 import { GameCardContainer } from "./GameCardContainer";
 import { GameCardSkeleton } from "./GameCardSkeleton";
 
-const GameGrid = () => {
+export const GameGrid = () => {
   const {
     error,
     data: games,
@@ -58,5 +58,3 @@ const GameGrid = () => {
     </InfiniteScroll>
   );
 };
-
-export default GameGrid;
