@@ -5,7 +5,7 @@ interface Props {
   gameId: number;
 }
 
-const GameScreenshots = ({ gameId }: Props) => {
+export const GameScreenshots = ({ gameId }: Props) => {
   const { data, isLoading, error } = useScreenshots(gameId);
 
   if (isLoading) return null;
@@ -20,5 +20,3 @@ const GameScreenshots = ({ gameId }: Props) => {
     </SimpleGrid>
   );
 };
-
-export default GameScreenshots;
