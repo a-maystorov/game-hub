@@ -11,7 +11,7 @@ import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 import useGameQueryStore from "../store";
 
-const GenreList = () => {
+export const GenreList = () => {
   const { data: genres, isLoading, error } = useGenres();
   const selectedGenreId = useGameQueryStore((s) => s.gameQuery.genreId);
   const setSelectedGenreId = useGameQueryStore((s) => s.setGenreId);
@@ -53,5 +53,3 @@ const GenreList = () => {
     </>
   );
 };
-
-export default GenreList;
